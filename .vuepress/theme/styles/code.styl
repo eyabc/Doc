@@ -21,14 +21,14 @@
     border-radius 6px
     overflow auto
     code
-      color #fff
+      color #373737
       padding 0
       background-color transparent
       border-radius 0
 
 div[class*="language-"]
   position relative
-  background-color $codeBgColor
+  background-color #f7f7f7
   border-radius 6px
   .highlight-lines
     user-select none
@@ -75,7 +75,7 @@ div[class*="language-"]
       top 0
       width $lineNumbersWrapperWidth
       text-align center
-      color rgba(255, 255, 255, 0.3)
+      color rgb(88 88 88)
       padding 1.25rem 0
       line-height 1.4
       br
@@ -86,7 +86,6 @@ div[class*="language-"]
         user-select none
         font-size 0.85em
     &::after
-      content ''
       position absolute
       z-index 2
       top 0
@@ -135,3 +134,27 @@ div[class~="language-php"]:before
   content "php"
 
 @import '~prismjs/themes/prism-tomorrow.css'
+
+.token.keyword
+  color: #5f42b3
+.token.function
+  color: #ce5a5a
+
+.token.operator
+  color: #7f7979
+
+.token.punctuation
+  color: #7f7979
+
+
+.token.string
+  color: #387750
+
+.token.constant
+  color: #ffaf00
+
+.token.interpolation-punctuation
+  color: #7f7979
+
+.token.property, .token.class-name, .token.constant, .token.symbol
+  color: #ff0000

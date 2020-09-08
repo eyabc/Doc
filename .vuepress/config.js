@@ -4,6 +4,9 @@ const util = require('./util.js');
 module.exports = {
     title: '삽질하는 개발자',
     description: '',
+    markdown: {
+        // lineNumbers: true
+    },
     themeConfig: {
         nav: [
             { text: 'Todo', link: '/todo' },

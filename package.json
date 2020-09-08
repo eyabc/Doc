@@ -10,8 +10,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev --port 8000",
-    "docs:build": "vuepress build",
-    "eject": "vuepress eject"
+    "docs:build": "vuepress build"
   },
   "dependencies": {
     "vuetify": "^2.3.3",

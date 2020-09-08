@@ -17,10 +17,28 @@ const getSideBar = ({ folder, title, reverse }) => {
 };
 
 const makeDoc = (root) => (v, k) => {
-    return {
-        title: `${ k }. ${ v }`,
-        path: `${ root }/${ v }`,
-    };
+    if (typeof v === 'string') {
+        return {
+            title: `${ k }. ${ v }`,
+            path: `${ root }/${ v }`,
+        };
+    }
+    return v.reduce((obj, w, i) => {
+        if (i === 0) {
+            obj.title = `${ k }. ${ w }`;
+            obj.path = `${ root }/${ w }`;
+            obj.children = [];
+            console.log(obj)
+            return obj;
+        }
+        obj.children.push({
+            title: `${ w }`,
+            path: `${ root }/${ w }`,
+        });
+        console.log(obj)
+
+        return obj
+    }, {});
 };
 
 module.exports = { getSideBar, makeDoc };
