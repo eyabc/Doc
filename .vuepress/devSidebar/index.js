@@ -8,13 +8,8 @@ module.exports = [
     getSideBar({ folder: '/dev-nodes', title: '전체글' }),
     {
         title: '자바스크립트',
-        children: [
-            javascript,
-            getSideBar({ folder: '/dev/core-javascript/statements-declarations', title: 'Statements & declarations' }),
-        ].map(v => {
-            v.sidebarDepth = 6;
-            return v;
-        }),
+        children: javascript,
+
     },
     getSideBar({ folder: '/dev/react', title: '리액트' }),
     {

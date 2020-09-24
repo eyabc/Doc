@@ -37,20 +37,56 @@ class MyClass {
 
 
 ### 항상 Promise 객체를 반환한다.
-- function 이 Promise 가 아닌 값을 반환해도, 이행 상태의 Promise 로 감싸 반환한다.
-- 비동기 함수 내에서 return 한 값이, Promise 객체의 `[[PromiseResult]]` 값
-
+function 이 Promise 가 아닌 값을 반환해도, 이행 상태의 Promise 로 감싸 반환한다.
 ```javascript
 async function func1() {
   return 1;
 }
+/*
+func1()
+Promise {
+    [[PromiseState]]: "fulfilled"
+    [[PromiseResult]]: 1
+}
+*/
+```
+Promise 의 명시적 반환
 
+비동기 함수 내에서 return 한 값이, Promise 객체의 `[[PromiseResult]]` 값
+```javascript
 async function func2() {
   return Promise.resolve(2);
 }
+/*
+func2()
+Promise {
+    [[PromiseState]]: "fulfilled"
+    [[PromiseResult]]: 2
+}
+*/
 
-func1().then(console.log); // 1
-func2().then(console.log); // 2
+async function func4() {
+  return Promise.reject(2);
+}
+
+/* 
+func4()
+Promise {
+    [[PromiseState]]: "rejected"
+    [[PromiseResult]]: 2
+}
+*/ 
+```
+비동기 함수에서 return 을 해주지 않았을 때, 
+```javascript
+async function func3() { }
+/*
+func3()
+Promise {
+    [[PromiseState]]: "fulfilled"
+    [[PromiseResult]]: undefined
+}
+*/
 ```
 
 

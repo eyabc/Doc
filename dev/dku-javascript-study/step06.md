@@ -114,7 +114,7 @@ let longEar = {
 // 이제 제대로 동작합니다
 longEar.eat();  // 귀가 긴 토끼 이/가 먹이를 먹습니다.
 ```
-super를 호출하면 `[[HomeObject]]` 프로퍼티를 통해 프로토타입 부모 메서드를 가져올 수 있게 됩니다. 
+super 를 호출하면 `[[HomeObject]]` 프로퍼티를 통해 프로토타입 부모 메서드를 가져올 수 있게 됩니다. 
 
 따라서,  `[[HomeObject]]` 는 메서드로 정의해야 가질 수 있기 때문에 
 - method() O -> es6 의 shorthand method 입니다. function 에서 많은 기능이 제한되어 오직 method 로서 사용할 수 있는 특수 함수라고 합니다.

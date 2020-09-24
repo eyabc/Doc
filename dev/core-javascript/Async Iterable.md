@@ -1,4 +1,4 @@
-# async Iterable
+# Async Iterable
 
 ## generator Iterator
 Symbol.iterator 는 next() 가 구현된 일반 객체보다, 제너레이터를 반환하도록 구현하는 경우가 더 많다.
