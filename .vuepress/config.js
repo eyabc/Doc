@@ -2,7 +2,7 @@ const devSidebar = require('./devSidebar');
 const util = require('./util.js');
 
 module.exports = {
-    title: '삽질하는 개발자',
+    title: '재미있는 기억만 남기자',
     description: '',
     markdown: {
         // lineNumbers: true

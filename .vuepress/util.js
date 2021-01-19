@@ -21,6 +21,7 @@ const makeDoc = (root) => (v, k) => {
         return {
             title: `${ k }. ${ v }`,
             path: `${ root }/${ v }`,
+            sidebarDepth: 2,
         };
     }
     return v.reduce((obj, w, i) => {

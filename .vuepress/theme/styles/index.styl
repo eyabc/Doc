@@ -133,22 +133,27 @@ h1, h2, h3, h4, h5, h6
     opacity: 1
 
 h1
-  font-size 2.4rem
+  font-size 2.3rem
 
 h2
-  font-size 2.05rem
+  font-size 2rem
   padding-bottom .3rem
-  border-bottom 1px solid $borderColor
+  border-bottom 3px solid $borderColor
 
 h3
-  font-size 1.55rem
+  font-size 1.7rem
+  border-bottom 1px solid $borderColor
+
 
 
 h4
-  font-size 1.45rem
+  font-size 1.35rem
 
 h5
-  font-size 1.25rem
+  font-size 1.20rem
+
+h6
+  font-size 1.05rem
 
 a.header-anchor
   font-size 0.85em
@@ -217,11 +222,13 @@ th, td
 .sidebar
   width 240px
   .sidebar-group-items > li > .sidebar-sub-headers
+    overflow: auto
     display none
   @media (min-width: 1200px)
     right calc(50% + 400px)
     left inherit
     .sidebar-group-items > li > .sidebar-sub-headers
+      overflow: auto
       height: 80%
       overflow scroll
       display block

@@ -120,19 +120,19 @@
 - 스택오버플로우 에서는 생성자와 Object.create 의 차이점을 다음과 같이 설명한다.
     - new Person()
         - 새로운 Object 객체 생성
-        - obj.__proto 를 Person.prototype 으로 설정
+        - `obj.__proto__` 를 Person.prototype 으로 설정
         - return Person.call(obj) || obj
             - normally obj is returned but constructors in JS can return a value
             - 일반적으로 obj가 반환되지만 JS의 생성자는 값을 반환 할 수 있습니다.
     - Object.create(Person.prototype)
         - 새로운 Object 객체 생성
-        - obj.__proto 를 Person.prototype 으로 설정
+        - `obj.__proto__` 를 Person.prototype 으로 설정
         - return obj
             - So basically Object.create doesn't execute the constructor.
           
 
 
-#Symbol
+# Symbol
 ### by 노원
 - symbol 테이블 이라는 것을 알게되었습니다. 감사합니다. 
 ```

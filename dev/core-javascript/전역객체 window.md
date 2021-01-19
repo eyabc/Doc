@@ -6,32 +6,6 @@
 ### `TODO` window 객체의 자바스크립트 엔진
 
 ## BOM
-브라우저의 요소
-
-JS 엔진, 변수, 객체, 탭, 주소창, 즐겨찾기, 툴바
-
-### BOM 객체와 메서드
-screen, location, history, document
-
-parseInt, isNaN, Number, close, open, write, encodeURI, decodeURI, 
-
-setTimeout(clearTimeout), setInterval(clearInterval), getComputedStyle(태그)
-
-location (주소 정보)
-- host, hostname, protocol, href, pathname
-
-history
-- forward(go(1)), back(go(-1)), length(뒤로가기 페이지수)	페이지 이동	
-- pushState(객체, 제목, 주소), replace(객체, 제목, 주소)	주소만 바꿈	SPA
-
-Navigator(브라우저, 운영체제 정보)
-- userAgent, Lanaguage, cookieEabled, vendor, serviceworker
-
-screen(화면정보)
-- width, height, pixcelDepth, colorDepth, orientation(화면방향)
-- availWidth, availHeight(작업표시줄 제외)
-
-
  
 
 ## DOM
@@ -87,3 +61,8 @@ getMinutes, setMinutes,
 getSeconds, setSeconds, 
 toString(현재날짜), toLocaleString(보기좋은날짜), toUTCString(세계시)
 
+###
+getElementById가 queryselector에 비해 상대적으로 빠르기는 하나, 프로젝트 내에서 사용하는 함수의 횟수 querySelector의 성능(대략 초당 700만건 작업처리 가능하다네요)과 코드의 가독성을 고려해봤을 때 섞어서 사용하는 것 보다 통일하는 것이 낫다고 생각했습니다!
+https://hashcode.co.kr/questions/5692/%EA%B0%95%EC%9D%98-4-11-queryselector%EC%97%90-%EC%84%B1%EB%8A%A5%EB%AC%B8%EC%A0%9C%EC%97%90-%EB%8C%80%ED%95%B4-%EC%A7%88%EB%AC%B8-%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4getElementById가 queryselector에 비해 상대적으로 빠르기는 하나, 프로젝트 내에서 사용하는 함수의 횟수 querySelector의 성능(대략 초당 700만건 작업처리 가능하다네요)과 코드의 가독성을 고려해봤을 때 섞어서 사용하는 것 보다 통일하는 것이 낫다고 생각했습니다!
+                                                                                                                                                                                                             https://hashcode.co.kr/questions/5692/%EA%B0%95%EC%9D%98-4-11-queryselector%EC%97%90-%EC%84%B1%EB%8A%A5%EB%AC%B8%EC%A0%9C%EC%97%90-%EB%8C%80%ED%95%B4-%EC%A7%88%EB%AC%B8-%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4
+https://github.com/next-step/js-todo-list-step2/pull/18/files#r492672380

@@ -166,6 +166,19 @@ function f() {
 f();
 ```
 
+## async/await 이 promise 를 리턴할 때
+```javascript
+// bad
+AddUser: async (userName) => {
+  await fetch(`${ADDRESS}/api/users`, ApiOptions.POST({name: userName}));
+},
+
+// good
+AddUser: userName =>  fetch(`${ADDRESS}/api/users`, ApiOptions.POST({name: userName})),
+```
+[promise를 바로 return 하면 굳이 async/await을 사용하지 않아도 된답니다!](https://github.com/next-step/js-todo-list-step2/pull/23)
+
+
 ## 에러 처리
 ```javascript
 async function f() {

@@ -10,3 +10,4 @@
 - https://meetup.toast.com/posts/158
 - https://uxgjs.tistory.com/170
 - https://www.youtube.com/watch?v=RP_f5dMoHFc
+- http://dmitrysoshnikov.com/ecmascript/chapter-2-variable-object/

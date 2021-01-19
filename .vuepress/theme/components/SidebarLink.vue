@@ -105,6 +105,7 @@ function renderExternal (h, to, text) {
 .sidebar .sidebar-sub-headers
   padding-left 1rem
   font-size 0.95em
+  overflow: auto
 
 a.sidebar-link
   font-size 1em
@@ -125,6 +126,7 @@ a.sidebar-link
   .sidebar-group &
     padding-left 2rem
   .sidebar-sub-headers &
+    overflow: auto
     padding-top 0.25rem
     padding-bottom 0.25rem
     border-left none
