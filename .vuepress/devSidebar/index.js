@@ -1,4 +1,5 @@
 const javascript = require('./javascript.js');
+const java = require('./java.js');
 
 const root = '/dev/';
 
@@ -9,6 +10,10 @@ module.exports = [
   {
     title: '자바스크립트',
     children: javascript,
+  },
+  {
+    title: '자바',
+    children: java,
   },
   {
     title: '스터디',

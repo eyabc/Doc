@@ -9,8 +9,9 @@ Cross Origin Resource Sharing 정책
 - `Query String` ?sort=asc&page=1
 - `Fragment` #foo
 
-- `Port` 의 생략
-    - HTTP, HTTPS 프로토콜의 기본 포트 번호(80)가 정해져 있기 때문이다.
+- `Port` 의 생략 → 기본 포트 번호
+    - HTTP 80
+    - HTTPS 443
 
 ## 출처
 Protocol, Host, Port 

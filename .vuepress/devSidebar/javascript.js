@@ -215,9 +215,18 @@ module.exports = [
         path: `${cojs}/browser_mouse_event`,
       },
       {
+        title: `마우스 drag & drop`,
+        path: `${cojs}/Browser_event_mouse-drag-and-drop`,
+      },
+      {
+        title: `Pointer 이벤트`,
+        path: `${cojs}/Browser_pointer_events`,
+      },
+      {
         title: `Reference`,
         path: `${cojs}/Browser Reference`,
       },
+
     ].map(v => {
       v.sidebarDepth = 2;
       return v;
