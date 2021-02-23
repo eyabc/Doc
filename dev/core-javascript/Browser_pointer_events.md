@@ -48,9 +48,7 @@ pointing devices
 
 ### `mouse<event>` 를 `pointer<event>` 으로 대체하기
 - 마우스에서 잘 동작한다. 
-- 터치 장치에 대해서도 마법혁인 향상이 있다.
-- 하지만 CSS 에서 `touch-action: none` 을 추가해야하는 부분이 존재한다.
-    - `pointercancel` part 에서 다룰 것이다.
+- 터치 장치에 대해서도 마법적인 향상
 
 ## Pointer event properties
 ### 마우스 이벤트와 동일한 속성을 가지고 있다.
@@ -92,7 +90,7 @@ pointing devices
     - 안눌렸을 때 `0`
 
 #### tangentialPressure 
-> TODO 번역으로는 접선 압력인데 무엇을 뜻하는지 모르겠다 
+> TODO 번역으로는 접선 압력인데 무엇을 뜻하는지 모르겠다. 틸트를 뜻하는 기능인가
 
 – 정규화된 (일반적인?) 접선 압력 tangential pressure.
 

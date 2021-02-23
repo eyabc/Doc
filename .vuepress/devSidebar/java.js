@@ -3,6 +3,7 @@ const { makeDoc, getSideBar } = require('../util');
 const EFFECTIVE_JAVA = '/dev/java/effective-java';
 const EFFECTIVE_JAVA_CH2 = `${EFFECTIVE_JAVA}/ch2`;
 const EFFECTIVE_JAVA_CH3 = `${EFFECTIVE_JAVA}/ch3`;
+const EFFECTIVE_JAVA_CH4 = `${EFFECTIVE_JAVA}/ch4`;
 
 module.exports = [
   {
@@ -65,6 +66,68 @@ module.exports = [
           {
             title: `ITEM11 equals 를 재정의하려거든 hashCode 도 재정의하라`,
             path: `${EFFECTIVE_JAVA_CH3}/ITEM11`,
+          },
+          {
+            title: `ITEM12 toString 을 항상 재정의하라`,
+            path: `${EFFECTIVE_JAVA_CH3}/ITEM12`,
+          },
+          {
+            title: `ITEM13 clone 재정의는 주의해서 진행하라`,
+            path: `${EFFECTIVE_JAVA_CH3}/ITEM13`,
+          },
+          {
+            title: `ITEM14 Comparable 을 구현할지 고려하라`,
+            path: `${EFFECTIVE_JAVA_CH3}/ITEM14`,
+          },
+        ]
+      },
+      {
+        title: 'Ch4 클래스와 인터페이스',
+        path: `${EFFECTIVE_JAVA_CH4}/index`,
+        children: [
+          {
+            title: `ITEM15 클래스와 멤버의 접근 권한을 최소화하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM15`,
+          },
+          {
+            title: `ITEM16 public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM16`,
+          },
+          {
+            title: `ITEM17 변경 가능성을 최소화하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM17`,
+          },
+          {
+            title: `ITEM18 상속보다는 컴포지션을 사용하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM18`,
+          },
+          {
+            title: `ITEM19 상속을 고려해 설계하고 문서화 하라, 그러지 않았다면 상속을 금지하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM19`,
+          },
+          {
+            title: `ITEM20 추상 클래스보다는 인터페이스를 우선하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM20`,
+          },
+          {
+            title: `ITEM21 인터페이스는 구현하는 쪽을 생각해 설계하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM21`,
+          },
+          {
+            title: `ITEM22 인터페이스는 타입을 정의하는 용도로만 사용하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM22`,
+          },
+          {
+            title: `ITEM23 태그 달린 클래스보다는 클래스 계층구조를 활용하라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM23`,
+          },
+          {
+            title: `ITEM24 멤버 클래스는 되도록 static 으로 만들라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM24`,
+          },
+          {
+            title: `ITEM25 톱레벨 클래스는 한 파일에 하나만 담으라`,
+            path: `${EFFECTIVE_JAVA_CH4}/ITEM25`,
           },
         ]
       }

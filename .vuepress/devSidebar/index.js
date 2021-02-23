@@ -1,4 +1,4 @@
-const javascript = require('./javascript.js');
+const javascript =require('./javascript.js');
 const java = require('./java.js');
 
 const root = '/dev/';

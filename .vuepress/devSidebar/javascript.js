@@ -223,6 +223,10 @@ module.exports = [
         path: `${cojs}/Browser_pointer_events`,
       },
       {
+        title: `키보드 keydown keyup`,
+        path: `${cojs}/Browser_keydown_keyup_events`,
+      },
+      {
         title: `Reference`,
         path: `${cojs}/Browser Reference`,
       },
