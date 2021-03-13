@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[227],{635:function(t,n,e){"use strict";e.r(n);var s=e(44),l=Object(s.a)({},(function(){var t=this.$createElement,n=this._self._c||t;return n("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[n("p",[this._v("오늘은 비몽사몽 기차를 타고 경기도에 올라와.\n푹 쉬었다.")])])}),[],!1,null,null,null);n.default=l.exports}}]);
